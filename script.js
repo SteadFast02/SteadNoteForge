@@ -38,6 +38,10 @@ notesContainer.addEventListener("click",function(e){
     }
 })
 
+notesContainer.addEventListener("input", function () {
+    updateStorage(); // Update storage when the content of a note changes
+});
+
 
 document.addEventListener("keydown",event=>{
     if(event.key === "Enter")
